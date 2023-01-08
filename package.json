@@ -1,7 +1,7 @@
 {
-  "name": "webpack",
-  "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Webpack.",
-  "version": "0.0.0",
+  "name": "portfolio",
+  "description": "My portfolio made using Bootstrap, Javascript, and scss",
+  "version": "0.0.1",
   "private": true,
   "stackblitz": {
     "startCommand": "npm start"
