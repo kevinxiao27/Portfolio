@@ -3,7 +3,12 @@
 }
 
 #navbarContent {
-    box-shadow: #ffffff5f 0px 0px 0px 1px;
+    box-shadow: none;
+}
+
+.navbar {
+    box-shadow: none;
+    background-image: none;
 }
 
 .nav-link {

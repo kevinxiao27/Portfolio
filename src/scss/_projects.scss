@@ -1,0 +1,30 @@
+.project-content {
+    padding: 10px;
+    min-height: 300px;
+    color: $gray-100;
+    border-radius: 20px;
+    border: 1px solid #fafafa;
+    background-color: #3c3c3c;
+  }
+
+.project-title {
+  height: 120%;
+  margin-left: 5%;
+  padding-left: 20px;
+  border-radius: 20px;
+  border: 1px solid #fafafa;
+  background-color: #188a7b;
+}
+
+.project-description-content {
+  padding: 5px;
+  padding-left: 20px;
+}
+
+.content-container {
+    z-index: 1;
+}
+
+.image-height {
+    max-height: 300px;
+}

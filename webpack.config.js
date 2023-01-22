@@ -1,6 +1,7 @@
 import path from "path"
 import MiniCssExtractPlugin from "mini-css-extract-plugin"
 import HtmlWebpackPlugin from "html-webpack-plugin"
+import CopyPlugin from 'copy-webpack-plugin';
 
 export default {
   // Define the entry points of our application (can be multiple for different sections of a website)
@@ -73,6 +74,16 @@ export default {
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
       chunkFilename: "[id].css"
+    }),
+
+    // Copy images to the public folder
+    new CopyPlugin({
+      patterns: [
+        {
+          from: 'src/images',
+          to: 'images',
+        },
+      ],
     }),
 
     // Inject styles and scripts into the HTML
