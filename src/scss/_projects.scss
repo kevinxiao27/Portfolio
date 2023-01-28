@@ -1,3 +1,7 @@
+.disabled {
+  pointer-events: none;
+}
+
 .project-content {
     padding: 10px;
     min-height: 300px;
@@ -8,23 +12,27 @@
   }
 
 .project-title {
-  height: 120%;
-  margin-left: 5%;
-  padding-left: 20px;
-  border-radius: 20px;
-  border: 1px solid #fafafa;
-  background-color: #188a7b;
+  padding: 5px;
+  font-size: 15px;
 }
 
-.project-description-content {
+.project-body {
+  text-decoration: none;
+  color: #f3f3f3;
   padding: 5px;
   padding-left: 20px;
 }
 
+.project-button-link {
+  position: absolute;
+  bottom: 10px;
+}
+
 .content-container {
-    z-index: 1;
+  z-index: 1;
 }
 
 .image-height {
-    max-height: 300px;
+  max-height: 300px;
 }
+

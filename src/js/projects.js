@@ -1,9 +1,10 @@
 const projects = [
     {
-      name: 'project1',
-      imageSrc: './images/tree-frog.jpg',
-      desc: 'project description',
-      link: 'https://github.com/',
+      name: 'Django Api',
+      imageSrc: './images/djangoblog.png',
+      desc: `A personal website API featuring blog and article capabilities through a user interface provided in the form of an admin site. 
+      Made using Django framework in Python 3, sites made with html and stylized using bootstrap. Initialization requires a virtual environment setup, installation of Django, and creation of a superuser in the terminal`,
+      link: 'https://github.com/kevinxiao27/Django-Blog-API',
     },
     {
       name: 'project2',
@@ -29,14 +30,14 @@ const projects = [
         <div class="row position-relative">
           <div class="content-container col-12 col-md-7 ${contentOrderClassName}">
             <div class="project-content">
-                <div>
+                <h3 class="project-title">
                 ${project.name}
-                </div>
-                <div>
+                </h3>
+                <p class="project-body disabled">
                 ${project.desc}
-                </div>
+                </p>
                 <div>
-                <a href="${project.link}" class="btn btn-primary" role="button" target="_blank">
+                <a href="${project.link}" class="btn btn-primary project-button-link" role="button" target="_blank">
                     Toggle link
                 </a>
                 </div>
