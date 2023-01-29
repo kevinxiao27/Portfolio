@@ -31,9 +31,9 @@ $enable-shadows: true;
 $offcanvas-box-shadow: 0 10px 30px rgba(0, 0, 0, .175);
 
 // Customize some defaults
-$primary: #95fcdd;
+$primary: #95affc;
 $body-color: #dedede;
-$body-bg: #18916d;
+$body-bg: #185191;
 $border-radius: 5px;
 $success: #7952b3;
 $utilities: (
@@ -102,35 +102,35 @@ body {
   padding: 15px;
 }
 
+.profile-content {
+  min-height: 170px;
+  padding-bottom: 15px;
+}
+
+.profile-image-height {
+  max-height: 150 px;
+  max-width: 150 px;
+}
+
 .tealBorder {
   border-left: 3px solid #ffffff;
 }
 
-.middleContent {
+.middle-content {
   text-align: justify;
   margin: auto;
+  width: 50%;
 }
 
-// .accordion-item {
-//   border: 1px solid #ffffff;
-// }
-
-// .accordion-header {
-//   border-bottom: 1px solid #ffffff;
-//   color: #f3f3f3;
-// }
-
-// .accordion-button {
-//   color: #f3f3f3;
-//   background-color: rgba(0,0,0,0);
-//   border: 0px;
-// }
-
-// .accordion-body {
-//   padding: 20px;
-//   padding-top: 10px;
-// }
+.nav-pills .nav-link {
+  border-radius: 0px;
+  border-left: 4px solid #000000;
+}
 
 h1, h2, h3 {
   color: #f3f3f3;
+}
+
+.section-header {
+  padding-bottom: 10px;
 }

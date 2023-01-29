@@ -6,7 +6,7 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar position-sticky top-0 navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">KX</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,29 +15,34 @@
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#about_me">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about_me">About Me</a>
+              <a class="nav-link" href="#extracurriculars">Extracurriculars</a>
             </li>
             <li class="nav-item"> 
-              <a class="nav-link" href="#extracurriculars">Extracurriculars</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="m-5 mx-5 p-4 tealBorder middleContent">
+    <div class="m-5 mx-5 p-4 tealBorder middle-content">
       <h1>Hello, my name is:</h1>
       <h2>Kevin Xiao</h2>
     </div>
-    <section class="middleContent mx-auto mb-5" style="width: 60%;" id="about_me">
+    <section class="middle-content mx-auto pt-5" id="about_me">
       <h3>About Me</h3>
-      <a>I am a senior at Sir Winston Churchill Highschool taking the IB diploma program. 
-        This site is a portfolio of my extracurriculars and projects that I have worked on during my time in highschool</a>
+      <div class="row position-relative">
+        <p class="col-5 order-first profile-content">I am a senior at Sir Winston Churchill Highschool taking the IB diploma program. 
+        This site is a portfolio of my extracurriculars and projects that I have worked on throughout my time in highschool.</p>
+        <div class="project-image col-12 col-md-6 position-md-absolute order-last offset-md-6 text-end">
+          <img class="img-fluid profile-image-height float-right" src="./images/tree-frog.jpg" alt="Photo">
+        </div>
+      </div>
     </section>
-    <section class="middleContent mx-auto mb-5" style="width: 60%;" id="extracurriculars">
-      <h3 class="mx-auto">Extracurriculars</h3>
+    <section class="middle-content mx-auto pt-5" id="extracurriculars">
+      <h3 class="mx-auto section-header">Extracurriculars</h3>
       <div class="d-flex align-items-start">
         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button class="nav-link active" id="v-pills-piano-tab" data-bs-toggle="pill" data-bs-target="#v-pills-piano" type="button" role="tab" aria-controls="v-pills-piano" aria-selected="true">Piano</button>
@@ -59,7 +64,8 @@
         </div>
       </div>
     </section>
-    <script src="dist/js/main.js"></script>
-    <div id="projects"></div>
+    <div class="middle-content pt-5" style="width: 58%;"id="projects"></div>
+      <script src="dist/js/main.js"></script>
+    </div>
   </body>
 </html>

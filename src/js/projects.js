@@ -3,7 +3,7 @@ const projects = [
       name: 'Django Api',
       imageSrc: './images/djangoblog.png',
       desc: `A personal website API featuring blog and article capabilities through a user interface provided in the form of an admin site. 
-      Made using Django framework in Python 3, sites made with html and stylized using bootstrap. Initialization requires a virtual environment setup, installation of Django, and creation of a superuser in the terminal`,
+      Made using Django framework in Python 3, sites made with html and stylized using bootstrap. Initialization requires a virtual environment setup, installation of Django, and the creation of a superuser.`,
       link: 'https://github.com/kevinxiao27/Django-Blog-API',
     },
     {
@@ -38,7 +38,7 @@ const projects = [
                 </p>
                 <div>
                 <a href="${project.link}" class="btn btn-primary project-button-link" role="button" target="_blank">
-                    Toggle link
+                  See Project
                 </a>
                 </div>
             </div>
