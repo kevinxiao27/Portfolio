@@ -1,2 +1,2 @@
 ## My Personal Portfolio Site
-made with HTML, bootstrap, and java
+made with HTML, SCSS, bootstrap, and java
