@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap">
   </head>
   <body>
-    <nav class="navbar position-sticky top-0 navbar-expand-lg">
+    <nav class="navbar navbar-dark position-sticky top-0 navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">KX</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,31 +19,37 @@
               <a class="nav-link" aria-current="page" href="#about_me">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#extracurriculars">Extracurriculars</a>
+              <a class="nav-link" href="#projects-link">Projects</a>
             </li>
             <li class="nav-item"> 
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#extracurriculars">Extracurriculars</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="m-5 mx-5 p-4 tealBorder middle-content">
+    <div class="container">
+    <div class="ms-xxl-n5 p-4 title-border">
       <h1>Hello, my name is:</h1>
       <h2>Kevin Xiao</h2>
     </div>
-    <section class="middle-content mx-auto pt-5" id="about_me">
-      <h3>About Me</h3>
-      <div class="row position-relative">
-        <p class="col-5 order-first profile-content">I am a senior at Sir Winston Churchill Highschool taking the IB diploma program. 
-        This site is a portfolio of my extracurriculars and projects that I have worked on throughout my time in highschool.</p>
-        <div class="project-image col-12 col-md-6 position-md-absolute order-last offset-md-6 text-end">
-          <img class="img-fluid profile-image-height float-right" src="./images/tree-frog.jpg" alt="Photo">
-        </div>
+    <section class="mx-auto pt-5" id="about_me">
+      <span class="row col-6 col-md-6 position-md-absolute text-end">
+        <img class="img-fluid profile-image float-left" src="./images/profile-picture.png" alt="Profile Picture">
+      </span>
+      <div class="about-me-container m-2 row position-relative">
+        <h3>About Me</h3>
+        <p class="col-6 profile-content">I am a senior at Sir Winston Churchill Highschool taking the IB diploma program. 
+        This site is a portfolio of my extracurriculars and projects that I have worked on throughout my time in highschool.
+        </p>
       </div>
     </section>
-    <section class="middle-content mx-auto pt-5" id="extracurriculars">
-      <h3 class="mx-auto section-header">Extracurriculars</h3>
+    <div class="section-title mx-auto" id="projects-link">
+     <h1>Projects</h1>
+    </div>
+    <section id="projects"></section>
+    <section class="mt-5 mx-auto" id="extracurriculars">
+      <h3 class="mx-auto section-title">Extracurriculars</h3>
       <div class="d-flex align-items-start">
         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button class="nav-link active" id="v-pills-piano-tab" data-bs-toggle="pill" data-bs-target="#v-pills-piano" type="button" role="tab" aria-controls="v-pills-piano" aria-selected="true">Piano</button>
@@ -54,7 +61,7 @@
           <button class="nav-link" id="v-pills-library-tab" data-bs-toggle="pill" data-bs-target="#v-pills-library" type="button" role="tab" aria-controls="v-pills-library" aria-selected="false">Library Volunteering</button>
         </div>
         <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade show active" id="v-pills-piano" role="tabpanel" aria-labelledby="v-pills-piano-tab" tabindex="0">I have been taking piano lessons since 2011, and since then it has become an integral part of my life, staying with me through different cities and different schools. I achieved first class honors on my level 10 practical. Piano, to me, is an outlet of expression and creativity made possible through dedication to practicing and improvement. I have also completed all of ARCT theory, notably achieving first class honors in both history and analysis. </br></br> Additionally, I am a teacher of low cost lessons offered by the non profit organization From Art to Heart. I teach weekly lessons, preparing and organizing material for lessons each week. This program provides beginner lessons to a predominantly younger demographic. Apart from the literal responsibilities of providing and preparing these lessons, I have also learned to become more adaptable in my communication while working with children; half rests may be better understood by children as a tophat compared to the literal symbol and definition.</div>
+          <div class="tab-pane fade show active" id="v-pills-piano" role="tabpanel" aria-labelledby="v-pills-piano-tab" tabindex="0">I have been taking piano lessons since 2011, and since then it has become an integral part of my life, staying with me through different cities and different schools. I achieved first class honors on my level 10 practical. Piano, to me, is an outlet of expression and creativity made possible through dedication to practicing and improvement. I have also completed all of ARCT theory, notably achieving first class honors in both history and analysis. </br></br> Additionally, I am a teacher of low cost lessons offered by the non profit organization From Art to Heart. I teach weekly lessons, preparing and organizing material for lessons each week. This program provides beginner lessons to a predominantly younger demographic. Apart from the literal responsibilities of providing and preparing these lessons, I have also learned to become more adaptable in my communication while working with children.</div>
           <div class="tab-pane fade" id="v-pills-performances" role="tabpanel" aria-labelledby="v-pills-performances-tab" tabindex="0">I am a director for the Community Music Performances Program at From Art to Heart, which aims to provide performance opportunities to talented youth and also inject enthusiasm through recitals for seniors—who have been and still are particularly isolated because of pandemic regulations. I organize and plan with other members of the team, and outreach to potential performance locations.</div>
           <div class="tab-pane fade" id="v-pills-debate" role="tabpanel" aria-labelledby="v-pills-debate-tab" tabindex="0">Member of school's debate club for 2021-2022 and 2022-2023 season. Debate club holds weekly meetings with practice rounds, which takes roughly 1.5 hours for every meeting. I have recently participated in the Churchill debate tournament, placing 4th as a team and 8th speaker overall. Participating in debate as an activity has allowed me to grow and develop as a speaker; I find greater confidence and comfort, notably in impromptu or unrehearsed presentations. </div>
           <div class="tab-pane fade" id="v-pills-creative" role="tabpanel" aria-labelledby="v-pills-creative-tab" tabindex="0">I am a founding member of my school's Creative Writing Club. I organize and direct with other founders to host workshops and competitions for different forms of creative writing. We have hosted murder mystery play writing competition, providing writing spaces and workshops on play-writing conventions. Currently hosting weekly workshops on flash fiction.</div>
@@ -64,8 +71,7 @@
         </div>
       </div>
     </section>
-    <div class="middle-content pt-5" style="width: 58%;"id="projects"></div>
-      <script src="dist/js/main.js"></script>
     </div>
+    <script src="dist/js/main.js"></script>
   </body>
 </html>

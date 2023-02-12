@@ -25,17 +25,18 @@
 // Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
 
 // Toggle global options
-$enable-gradients: true;
-$enable-shadows: true;
+$enable-gradients: false;
+$enable-shadows: false;
+$enable-negative-margins: true;
 
 $offcanvas-box-shadow: 0 10px 30px rgba(0, 0, 0, .175);
 
 // Customize some defaults
-$primary: #95affc;
-$body-color: #dedede;
-$body-bg: #185191;
+$primary: #63345e;
+$body-color: #b7c1de;
+$body-bg: #092047;
 $border-radius: 5px;
-$success: #7952b3;
+$success: #ac61b9;
 $utilities: (
   "position": (
     property: position,
@@ -97,6 +98,7 @@ $utilities: (
 @import "icon-list";
 @import "navbar";
 @import "projects";
+@import "extracurriculars";
 
 body {
   padding: 15px;
@@ -107,19 +109,18 @@ body {
   padding-bottom: 15px;
 }
 
-.profile-image-height {
-  max-height: 150 px;
-  max-width: 150 px;
+.profile-image {
+  border: none !important;
+  max-height: 400px;
+  max-width: 250px;
 }
 
-.tealBorder {
-  border-left: 3px solid #ffffff;
+.about-me-container {
+  padding-left: 270px;
 }
 
-.middle-content {
-  text-align: justify;
-  margin: auto;
-  width: 50%;
+.title-border {
+  border-left: 3px solid rgba($body-color, 0.1);
 }
 
 .nav-pills .nav-link {
@@ -133,4 +134,10 @@ h1, h2, h3 {
 
 .section-header {
   padding-bottom: 10px;
+}
+
+.section-title {
+  background-color: $primary;
+  border-radius: 10px;
+  padding: 15px;
 }

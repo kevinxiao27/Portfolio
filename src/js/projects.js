@@ -25,11 +25,12 @@ const projects = [
       // Order content right when index is odd
       const contentOrderClassName = index % 2 === 1 ? 'order-last offset-md-5' : 'order-first';
       const imgOrderClassName = index % 2 === 0 ? 'order-last offset-md-6 text-end' : 'order-first';
+      const projectBorder = index % 2 == 0 ? 'project-border-right' : 'project-border-left';
       return `
       <div class="container">
         <div class="row position-relative">
           <div class="content-container col-12 col-md-7 ${contentOrderClassName}">
-            <div class="project-content">
+            <div class="project-content ${projectBorder}">
                 <h3 class="project-title">
                 ${project.name}
                 </h3>
@@ -38,13 +39,13 @@ const projects = [
                 </p>
                 <div>
                 <a href="${project.link}" class="btn btn-primary project-button-link" role="button" target="_blank">
-                  See Project
+                  
                 </a>
                 </div>
             </div>
           </div>
           <div class="project-image col-12 col-md-6 position-md-absolute ${imgOrderClassName}">
-            <img class="img-fluid image-height float-right" src="${project.imageSrc}" alt="${project.desc}">
+            <img class="img-fluid image-height float-right project-image" src="${project.imageSrc}" alt="${project.desc}">
           </div>
         </div>
       </div>

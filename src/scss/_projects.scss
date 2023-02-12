@@ -5,29 +5,57 @@
 .project-content {
     padding: 10px;
     min-height: 300px;
+    max-height: 300px;
     color: $gray-100;
-    border-radius: 20px;
-    border: 1px solid #fafafa;
-    background-color: #3d3d3d;
+    border: $body-bg;
+    background-color: $body-color;
   }
+
+.project-border-left {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.project-border-right {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
 
 .project-title {
   padding: 5px;
   font-size: 15px;
+  color: $body-bg;
 }
 
 .project-body {
   text-decoration: none;
-  color: #f3f3f3;
   padding: 5px;
   padding-left: 20px;
   padding-right: 20px;
+  color: $body-bg;
+}
+
+.project-image {
+  border-radius: none;
 }
 
 .project-button-link {
+  background-size: 60px;
+  max-height: 60px;
+  min-height: 60px;
+  max-width: 60px;
+  min-width: 60px;
+  background-image: url(https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png);
+  background-color: rgba($body-bg, 0.7) !important;
+  border: none !important;
   position: absolute;
   bottom: 10px;
   padding: 5px;
+}
+
+.project-button-link:hover {
+  background-color: rgba($body-bg, 0.5) !important;
 }
 
 .content-container {
