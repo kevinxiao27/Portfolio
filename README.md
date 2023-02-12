@@ -1,7 +1,2 @@
-## How to use
-clone the repository and complete the following steps
-
-```sh
-npm install
-npm start
-```
+## My Personal Portfolio Site
+made with HTML, bootstrap, and java
