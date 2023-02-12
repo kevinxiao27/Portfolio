@@ -23,8 +23,8 @@ const projects = [
   const projectsHTML = projects
     .map((project, index) => {
       // Order content right when index is odd
-      const contentOrderClassName = index % 2 === 1 ? 'order-last offset-md-5' : 'order-first';
-      const imgOrderClassName = index % 2 === 0 ? 'order-last offset-md-6 text-end' : 'order-first';
+      const contentOrderClassName = index % 2 === 1 ? 'order-md-last offset-md-5' : 'order-md-first';
+      const imgOrderClassName = index % 2 === 0 ? 'order-md-last offset-md-6 text-end' : 'order-md-first';
       const projectBorder = index % 2 == 0 ? 'project-border-right' : 'project-border-left';
       return `
       <div class="container">

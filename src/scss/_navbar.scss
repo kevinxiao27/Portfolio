@@ -8,7 +8,9 @@
 
 .navbar {
     box-shadow: none;
+    background-color: $primary;
     background-image: none;
+    z-index:2;
 }
 
 .navbar-brand {
