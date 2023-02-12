@@ -12,7 +12,7 @@ export default {
   // Define the destination directory and filenames of compiled resources
   output: {
     filename: "js/[name].js",
-    path: path.resolve(process.cwd(), "./public"),
+    path: path.resolve(process.cwd(), "./build"),
   },
 
   // Define development options
@@ -76,7 +76,7 @@ export default {
       chunkFilename: "[id].css"
     }),
 
-    // Copy images to the public folder
+    // Copy images to the build folder
     new CopyPlugin({
       patterns: [
         {
@@ -95,7 +95,7 @@ export default {
   // Configure the "webpack-dev-server" plugin
   devServer: {
     static: {
-      directory: path.resolve(process.cwd(), "public")
+      directory: path.resolve(process.cwd(), "build")
     },
     watchFiles: [
       path.resolve(process.cwd(), "index.html")

@@ -34,6 +34,7 @@ Thumbs.db
 # Folders to ignore
 /js/coverage/
 node_modules
+build
 
 # History folder
 .history
