@@ -15,10 +15,10 @@ Open [http://localhost/:8080](http//localhost:8080) to view it in the browser.
 
 The page will reload upon any changes being made
 #### `npm build`
-Builds the application for production to the `build` folder
+Builds the application for production to the `build` folder\
 The build is minified, and the app is ready to be deployed
 
 #### `npm deploy`
-Publish the build files to a gh-pages branch on GitHub
-Running the script also runs `npm predeploy` and `npm build`
+Publish the build files to a gh-pages branch on GitHub\
+Running the script also runs `npm predeploy` and `npm build`\
 **Note: Please update the `homepage` url in `package.json` for your own project**
