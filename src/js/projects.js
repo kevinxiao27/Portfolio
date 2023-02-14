@@ -9,11 +9,11 @@ const projects = [
     {
       name: 'Manga Update Checker',
       imageSrc: './images/manga-scrapper-example.png',
-      desc: 'Uses selenium and python to check for manga updates. Future plans to add UI using kivy, currently works as standalone python file.',
+      desc: 'Uses selenium and python to check for manga updates. Currently functions as a standalone python file. Future plans to create UI and desktop application to present chapters',
       link: 'https://github.com/kevinxiao27/Manga-Update-Checker',
     },
     {
-      name: 'project3',
+      name: 'Python Numbers',
       imageSrc: './images/finalproject.png',
       desc: `School final project made with python,
        describes various numbers in relation to each other: GCF, LCM. prime factorization etc. Uses sieve of erasthothenes to generate primes.`,
