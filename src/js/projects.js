@@ -7,10 +7,10 @@ const projects = [
       link: 'https://github.com/kevinxiao27/Django-Blog-API',
     },
     {
-      name: 'project2',
-      imageSrc: './images/tree-frog.jpg',
-      desc: 'project description',
-      link: 'https://github.com/',
+      name: 'Manga Update Checker',
+      imageSrc: './images/manga-scrapper-example.png',
+      desc: 'Uses selenium and python to check for manga updates. Future plans to add UI using kivy, currently works as standalone python file.',
+      link: 'https://github.com/kevinxiao27/Manga-Update-Checker/tree/master',
     },
     {
       name: 'project3',
