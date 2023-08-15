@@ -44,8 +44,8 @@
     "style-loader": "^3.3.1",
     "trash": "^8.1.0",
     "uuid": "^9.0.0",
-    "webpack": "^5.70.0",
-    "webpack-cli": "^5.0.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.7.4"
   }
 }
