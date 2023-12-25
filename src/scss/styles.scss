@@ -34,11 +34,11 @@ $offcanvas-box-shadow: 0 10px 30px rgba(0, 0, 0, .175);
 // Customize some defaults
 $font-family-base: 'Assistant', sans-serif;
 $font-size-base: 1.125rem;
-$primary: #63345e;
-$body-color: #b7c1de;
-$body-bg: #092047;
+$primary: #ffffff;
+$body-color: #111111;
+$body-bg: #ffffff;
 $border-radius: 5px;
-$success: #ac61b9;
+$success: #6183b9;
 $utilities: (
   "position": (
     property: position,
@@ -107,6 +107,7 @@ body {
 }
 
 .profile-content {
+  color: white;
   min-height: 170px;
   padding-bottom: 15px;
 }
@@ -139,7 +140,7 @@ h1, h2, h3 {
 }
 
 .section-title {
-  background-color: $primary;
-  border-radius: 10px;
+  background-color: #333333;
+  border-radius: 0px;
   padding: 15px;
 }
