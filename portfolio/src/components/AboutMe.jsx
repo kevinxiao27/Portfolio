@@ -5,4 +5,5 @@ const AboutMe = () => {
   return <div>AboutMe</div>;
 };
 
-export default AboutMe;
+const WrappedAboutMe = transition(AboutMe);
+export default WrappedAboutMe;

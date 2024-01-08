@@ -1,7 +1,13 @@
-import { AboutMe, Footer, NavBar, Projects, Experience, Home3d } from "./index";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import AboutMe from "./components/AboutMe";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Home3d from "./components/Home";
 import "./App.css";
+import transition from "./utils/transition";
 
 function App() {
   const location = useLocation();
@@ -9,7 +15,7 @@ function App() {
     <div className="w-screen h-screen">
       <NavBar />
       <AnimatePresence mode="wait">
-        <Routes location={location} key={location.pathname}>
+        <Routes location={location} key={location.pathname} initial={false}>
           <Route index element={<Home3d />} />
           <Route path="/about-me" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
