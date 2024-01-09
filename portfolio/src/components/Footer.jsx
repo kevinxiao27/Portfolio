@@ -29,7 +29,9 @@ const Footer = () => {
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div className="grid grid-cols-9 mt-5 text-left">
         <div className="col-start-2 col-span-2">
-          <p>© 2024 Kevin Xiao.</p>
+          <p>
+            © 2024 Kevin Xiao <br /> Made with &lt;3
+          </p>
         </div>
       </div>
     </footer>

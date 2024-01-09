@@ -3,6 +3,7 @@ import instagram from "../assets/instagram.svg";
 import linkedin from "../assets/linkedin.svg";
 import twitter from "../assets/twitter.svg";
 import email from "../assets/email.svg";
+import github from "../assets/github-icon.svg";
 
 export const footerLinks = [
   {
@@ -22,6 +23,12 @@ export const footerLinks = [
     url: "https://www.instagram.com/kevinxiiao/",
     title: "Instagram",
     src: instagram,
+  },
+  {
+    id: 3,
+    url: "https://github.com/kevinxiao27",
+    title: "Github",
+    src: github,
   },
   // {
   //   url: "/",
