@@ -66,7 +66,7 @@ const Home3d = () => {
           <div className="bg-slate-700 p-2 flex-none">
             <div className="w-96">
               <img
-                className="-translate-x-6 -translate-y-6 w-96"
+                className="-translate-x-6 -translate-y-6 w-96 rounded-full"
                 src={profile}
               ></img>
             </div>
