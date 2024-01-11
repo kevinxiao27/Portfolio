@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://kevinxiao27.github.io/",
+  "homepage": "https://kevinxiao27.github.io/Portfolio",
   "type": "module",
   "scripts": {
     "start": "vite",

@@ -19,7 +19,7 @@ const NavBar = () => {
           transition ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         } transition ease-in-out`}
       >
-        <a className="mb-5" href="https://kevinxiao27.github.io/">
+        <a className="mb-5" href="https://kevinxiao27.github.io/Portfolio">
           <img className="object-contain h-16 ml-5" src={logo} alt="Logo" />
         </a>
       </div>
