@@ -17,7 +17,7 @@ const Footer = () => {
                   {foot.title}
                 </a>
                 <img
-                  className="object-contain h-8 ml-auto"
+                  className="object-contain h-8 ml-auto fill-white"
                   src={foot.src}
                   alt={foot.title}
                 />
