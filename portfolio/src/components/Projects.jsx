@@ -1,29 +1,32 @@
-import React from "react";
-import { useState, useEffect, useCallback } from "react";
-import transition from "../utils/transition";
-import github from "../assets/github-icon.svg";
-import { projects } from "../constants/projects";
-import { useLocation } from "react-router-dom";
+import React from "react"
+import { useState, useEffect, useCallback } from "react"
+import transition from "../utils/transition"
+import github from "../assets/github-icon.svg"
+import { projects } from "../constants/projects"
+import { useLocation } from "react-router-dom"
 
 const Projects = () => {
-  const location = useLocation();
-  const [animation, setAnimation] = useState(false);
+  const location = useLocation()
+  const [animation, setAnimation] = useState(false)
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setAnimation(true);
-    }, 10);
-    return () => clearTimeout(timeout);
-  }, [location]);
+      setAnimation(true)
+    }, 10)
+    return () => clearTimeout(timeout)
+  }, [location])
   return (
     <div className="m-5">
+      <div className="bg-black w-2/4 border-solid border-2 border-gray-100 border-t-0 border-l-0 p-3 flex mt-4 mx-auto">
+        <h1 className="mx-auto mttext-xl font-bold">Projects</h1>
+      </div>
       {projects.map((proj, index) => {
-        const contentOrder = index % 2 === 0 ? "order-first" : "order-last";
+        const contentOrder = index % 2 === 0 ? "order-first" : "order-last"
         const directionIn =
-          index % 2 === 0 ? "translate-x-10" : "-translate-x-10";
+          index % 2 === 0 ? "translate-x-10" : "-translate-x-10"
         const borderDir =
           index % 2 === 0
             ? "border-l-0 lg:rounded-r"
-            : "border-r-0 lg:rounded-l";
+            : "border-r-0 lg:rounded-l"
         return (
           <div
             key={`${proj.id}`}
@@ -60,10 +63,10 @@ const Projects = () => {
               </div>
             </div>
           </div>
-        );
+        )
       })}
     </div>
-  );
-};
+  )
+}
 
-export default transition(Projects);
+export default transition(Projects)
