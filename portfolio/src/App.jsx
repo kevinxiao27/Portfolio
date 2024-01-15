@@ -1,16 +1,16 @@
-import { Route, Routes, useLocation } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
-import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
-import Projects from "./components/Projects";
-import Experience from "./components/Experience";
-import Home3d from "./components/Home";
-import "./App.css";
+import { Route, Routes, useLocation } from "react-router-dom"
+import { motion, AnimatePresence } from "framer-motion"
+import Footer from "./components/Footer"
+import NavBar from "./components/NavBar"
+import Projects from "./components/Projects"
+import Experience from "./components/Experience"
+import Home3d from "./components/Home"
+import "./App.css"
 
 function App() {
-  const location = useLocation();
+  const location = useLocation()
   return (
-    <div className="w-screen h-screen">
+    <div className="h-screen">
       <NavBar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname} initial={false}>
@@ -25,7 +25,7 @@ function App() {
       </AnimatePresence>
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
