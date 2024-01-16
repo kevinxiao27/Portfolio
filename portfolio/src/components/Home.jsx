@@ -13,7 +13,7 @@ const Home3d = () => {
     setTransition(true)
   }, [])
   return (
-    <>
+    <div className="relative mt-1">
       <div
         className={`ml-10 p-3 duration-1000 ${
           transition ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
@@ -48,7 +48,7 @@ const Home3d = () => {
                     </Canvas>
                   </div>
                   <div className="relative top-4 -translate-x-10 -translate-y-10 mt-4">
-                    <h2 className="absolute top-3 left-2 font-bold">
+                    <h2 className="relative top-3 left-2 font-bold">
                       Click Me!
                     </h2>
                     <img
@@ -90,7 +90,7 @@ const Home3d = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

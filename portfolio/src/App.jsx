@@ -10,7 +10,7 @@ import "./App.css"
 function App() {
   const location = useLocation()
   return (
-    <div className="h-screen">
+    <>
       <NavBar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname} initial={false}>
@@ -24,7 +24,7 @@ function App() {
         </Routes>
       </AnimatePresence>
       <Footer />
-    </div>
+    </>
   )
 }
 

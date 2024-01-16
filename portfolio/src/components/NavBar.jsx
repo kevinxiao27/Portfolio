@@ -13,7 +13,7 @@ const NavBar = () => {
     return () => clearTimeout(timeout)
   }, [])
   return (
-    <nav className="lg:flex lg:items-stretch lg:justify-end ml-auto bg-black w-full flex py-3 justify-between items-center navbar relative select-none bg-grey lg:flex lg:items-stretch w-full">
+    <nav className="lg:flex lg:items-stretch lg:justify-end ml-auto bg-black w-full flex py-3 justify-between items-center navbar select-none bg-grey lg:flex lg:items-stretch w-full relative top-0 overflow-hidden z-50">
       <div
         className={`mt-8 flex justify-start font-poppins px-4 transition duration-1000 ${
           transition ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
