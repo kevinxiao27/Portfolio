@@ -44,12 +44,12 @@ const Experience = () => {
                   } transition ease-in-out flex-none`}
                 >
                   <h3 className="font-bold text-white text-xl">{exp.name}</h3>
-                  <div className="flex">
-                    <h3 className="mb-3 font-normal text-white text-xl flex-none">
+                  <div className="lg:flex sm:flex-wrap">
+                    <h3 className="lg:mb-3 font-normal text-white text-xl flex-none">
                       <a href={exp.link}>{exp.organization}</a>
                     </h3>
                     <div className="grow"></div>
-                    <h3 className="flex-none">{`${exp.startDate} -- ${exp.endDate}`}</h3>
+                    <h3 className="mb-3 flex-none text-wrap">{`${exp.startDate} -- ${exp.endDate}`}</h3>
                   </div>
                   <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                     {exp.description}
