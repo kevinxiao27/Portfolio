@@ -36,6 +36,7 @@
 
 .slide-in {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -44,8 +45,14 @@
   transform-origin: bottom;
 }
 
+.fixed-navbar {
+  position: fixed !important;
+  top: 0;
+}
+
 .slide-out {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;

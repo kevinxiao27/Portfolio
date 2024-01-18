@@ -20,7 +20,11 @@ function App() {
             element={<Projects />}
             key={location.pathname}
           />
-          <Route path="/experience" element={<Experience />} />
+          <Route
+            path="/experience"
+            element={<Experience />}
+            key={location.pathname}
+          />
         </Routes>
       </AnimatePresence>
       <Footer />
