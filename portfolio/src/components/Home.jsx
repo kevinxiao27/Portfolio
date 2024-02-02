@@ -63,8 +63,8 @@ const Home3d = () => {
           </div>
         </section>
         <div className="w-4/5 mx-auto flex justify-center flex-row flex-wrap w-9/12 mt-3 mb-10 grid-cols-2">
-          <div className="bg-slate-700 p-2 flex-none">
-            <div className="w-96">
+          <div className="w-full md:w-auto mx-auto bg-slate-700 p-2 flex-none">
+            <div className="w-auto md:w-96">
               <img
                 className="-translate-x-6 mx-auto -translate-y-6"
                 src={profile}
