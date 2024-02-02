@@ -13,13 +13,13 @@ const Home3d = () => {
     setTransition(true);
   }, []);
   return (
-    <div className="mt-1 min-h-full">
+    <div className="mt-1 lg:w-full">
       <div
-        className={`ml-10 p-3 duration-1000 ${
+        className={`duration-1000 ${
           transition ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
         } transition ease-slow`}
       >
-        <section className="Home-Display">
+        <section className="Home-Display items-center justify-center mx-auto w-4/5">
           <div
             className={`mx-auto duration-1000 ${
               transition
@@ -28,13 +28,13 @@ const Home3d = () => {
             } transition ease-slow`}
           >
             <div
-              className={`flex flex-row flex-wrap mx-auto w-9/12 mt-10 mb-8 justify-between ${
+              className={`flex justify-center flex-row flex-wrap mx-auto px-10 md:px-0 mt-10 mb-8 justify-between ${
                 transition
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-10"
               } transition ease-slow duration-1000`}
             >
-              <div className="mx-auto">
+              <div className="mx-auto flex flex-col justify-center">
                 <h1 className="z-15 font-bold">Hi I'm Kevin!</h1>
                 <h1 className="z-15 font-bold">I develop software.</h1>
               </div>
@@ -47,7 +47,7 @@ const Home3d = () => {
                       <Pyramid3d position={[1, 0, 0]} />
                     </Canvas>
                   </div>
-                  <div className="relative top-4 -translate-x-10 -translate-y-10 mt-4">
+                  <div className="hidden lg:block relative top-4 -translate-x-10 -translate-y-10 mt-4">
                     <h2 className="relative top-3 left-2 font-bold">
                       Click Me!
                     </h2>
@@ -62,11 +62,11 @@ const Home3d = () => {
             </div>
           </div>
         </section>
-        <div className="flex flex-row flex-wrap m-auto w-9/12 mt-3 mb-10 grid-cols-2">
+        <div className="w-4/5 mx-auto flex justify-center flex-row flex-wrap w-9/12 mt-3 mb-10 grid-cols-2">
           <div className="bg-slate-700 p-2 flex-none">
             <div className="w-96">
               <img
-                className="-translate-x-6 -translate-y-6 w-96"
+                className="-translate-x-6 mx-auto -translate-y-6"
                 src={profile}
               ></img>
             </div>
