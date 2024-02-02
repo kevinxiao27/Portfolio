@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="col-start-2 col-3 w-64">
           <h1 className="text-3xl font-bold text-left">Contact Me</h1>
         </div>
-        <div className="col-start-7 mx-3">
+        <div className="translate-y-5 lg:translate-y-0 col-start-2 lg:col-start-7 mx-3">
           <ul>
             <li className="text-2xl mx-4 text-left">Social</li>
             {footerLinks.map((foot, index) => (
@@ -28,7 +28,7 @@ const Footer = () => {
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div className="grid grid-cols-9 mt-5 text-left">
-        <div className="col-start-2 col-span-2">
+        <div className="col-start-2 col-span-2 w-64 md:w-full">
           <p>
             © 2024 Kevin Xiao <br /> Made with &lt;3
           </p>

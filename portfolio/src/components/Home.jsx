@@ -1,19 +1,19 @@
-import React from "react"
-import { Canvas } from "@react-three/fiber"
-import { useState, useEffect } from "react"
-import profile from "../assets/profile-picture.png"
-import { motion } from "framer-motion"
-import Pyramid3d from "../utils/3dPyramid"
-import transition from "../utils/transition"
-import arrowleft from "../assets/arrowleft.png"
+import React from "react";
+import { Canvas } from "@react-three/fiber";
+import { useState, useEffect } from "react";
+import profile from "../assets/profile-picture.png";
+import { motion } from "framer-motion";
+import Pyramid3d from "../utils/3dPyramid";
+import transition from "../utils/transition";
+import arrowleft from "../assets/arrowleft.png";
 
 const Home3d = () => {
-  const [transition, setTransition] = useState(false)
+  const [transition, setTransition] = useState(false);
   useEffect(() => {
-    setTransition(true)
-  }, [])
+    setTransition(true);
+  }, []);
   return (
-    <div className="relative mt-1">
+    <div className="mt-1 min-h-full">
       <div
         className={`ml-10 p-3 duration-1000 ${
           transition ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
@@ -91,7 +91,7 @@ const Home3d = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default transition(Home3d)
+export default transition(Home3d);

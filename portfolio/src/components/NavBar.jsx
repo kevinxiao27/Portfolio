@@ -15,7 +15,7 @@ const NavBar = () => {
   return (
     <>
       <div className="invisible h-48"></div>
-      <nav className="fixed-navbar lg:flex lg:items-stretch lg:justify-end ml-auto bg-black flex py-3 justify-between items-center navbar select-none bg-grey lg:flex lg:items-stretch w-full top-0 overflow-hidden z-30">
+      <nav className="w-full fixed lg:flex lg:items-stretch lg:justify-end ml-auto bg-black flex py-3 justify-between items-center navbar select-none bg-grey lg:flex lg:items-stretch top-0 overflow-hidden z-30">
         <div
           className={`mt-8 flex justify-start font-poppins px-4 transition duration-1000 ${
             transition
