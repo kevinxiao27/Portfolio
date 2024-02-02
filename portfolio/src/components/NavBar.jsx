@@ -1,21 +1,21 @@
-import React from "react"
-import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
-import { navLinks } from "../constants/navconsts"
-import logo from "../assets/logo.png"
+import React from "react";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { navLinks } from "../constants/navconsts";
+import logo from "../assets/logo.png";
 
 const NavBar = () => {
-  const [transition, setTransition] = useState(false)
+  const [transition, setTransition] = useState(false);
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setTransition(true)
-    }, 10)
-    return () => clearTimeout(timeout)
-  }, [])
+      setTransition(true);
+    }, 10);
+    return () => clearTimeout(timeout);
+  }, []);
   return (
     <>
       <div className="invisible h-48"></div>
-      <nav className="fixed-navbar lg:flex lg:items-stretch lg:justify-end ml-auto bg-black w-full flex py-3 justify-between items-center navbar select-none bg-grey lg:flex lg:items-stretch w-full top-0 overflow-hidden z-30">
+      <nav className="fixed-navbar lg:flex lg:items-stretch lg:justify-end ml-auto bg-black flex py-3 justify-between items-center navbar select-none bg-grey lg:flex lg:items-stretch w-full top-0 overflow-hidden z-30">
         <div
           className={`mt-8 flex justify-start font-poppins px-4 transition duration-1000 ${
             transition
@@ -48,7 +48,7 @@ const NavBar = () => {
         </div>
       </nav>
     </>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
