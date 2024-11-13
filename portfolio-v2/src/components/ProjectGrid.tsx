@@ -10,30 +10,6 @@ interface ProjectGridProps {
   projects: Project[];
 }
 
-const projects: Project[] = [
-  {
-    name: "Cache You Later - nwHacks 2024",
-    date: "January 2024",
-    src: "/placeholder.svg?height=400&width=600",
-    desc: `nwHacks submission for community and connection based 
-    on real life and virtual geocaching integration. Utilizing a noSQL database 
-    through a RESTFUL API with user authentication and JWT Token, I seamlessly integrated the backend and 
-    frontend using Next.js. Employing React props and hooks, I efficiently handled over 20 endpoints. Additionally, 
-    I meticulously mapped and parsed data to fulfill the requirements of a web application, strategically leveraging Next.js for client/server side rendering.`,
-    link: "https://github.com/kevinxiao27/movie-ticket-booking",
-    prod: "https://example.com/cache-you-later"
-  },
-  {
-    name: "Fill",
-    date: "February 2024",
-    src: "/placeholder.svg?height=400&width=600",
-    desc: `Another project submission showcasing various technologies and integrations. 
-    This project demonstrates the use of modern web development techniques and best practices.`,
-    link: "https://github.com/kevinxiao27/fill-project"
-  }
-  // Add more projects here...
-];
-
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
@@ -62,7 +38,7 @@ export const ProjectGrid: React.FC<ProjectGridProps> = ({ projects }) => {
         }}
       >
         {projects.map((project, index) => (
-          <motion.div key={index} className='flex flex-col space-y-4 bg-[rgba(0,0,0,0.4)] p-5 rounded-lg' variants={fadeInUp}>
+          <motion.div key={index} className='flex flex-col space-y-4 bg-[rgba(0,0,0,0.4)] p-5 px-[4rem] rounded-lg' variants={fadeInUp}>
             <div className='relative aspect-[3/2] overflow-hidden rounded-lg'>
               <Link href={project.link}>
                 <Image

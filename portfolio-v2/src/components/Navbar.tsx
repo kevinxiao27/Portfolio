@@ -21,7 +21,7 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      if (currentScrollY > lastScrollY) {
+      if (currentScrollY > lastScrollY && currentScrollY > 0) {
         // Scrolling down
         controls.start({ y: "-100%" });
       } else {
@@ -78,7 +78,7 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
         className='md:hidden w-[90%] mr-3'
         initial={{ opacity: 0, height: 0 }}
         animate={{ opacity: isMobileMenuOpen ? 1 : 0, height: isMobileMenuOpen ? "auto" : 0 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.1 }}
       >
         <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
           {links.map((link, index) => (
