@@ -62,7 +62,7 @@ export const Name: React.FC = ({ name = "Kevin Xiao" }: { name?: string }) => {
               <div className='px-2'>Github</div>
             </Link>
             <Link
-              href='https://linkedin.com/in/kevin-xiao-xyz/'
+              href='https://www.linkedin.com/in/kevinxiaoxyz/'
               className='p-2  border-2 border-white rounded-lg cursor-pointer flex flex-row items-center'
             >
               <Linkedin size={30} />
@@ -82,7 +82,7 @@ export const Name: React.FC = ({ name = "Kevin Xiao" }: { name?: string }) => {
               <div className='px-2'>Github</div>
             </Link>
             <Link
-              href='https://linkedin.com/in/kevin-xiao-xyz/'
+              href='https://www.linkedin.com/in/kevinxiaoxyz/'
               className='p-2  border-2 border-white rounded-lg cursor-pointer flex flex-row'
             >
               <Linkedin size={30} />
