@@ -158,7 +158,7 @@ const PerlinDots = React.memo(() => {
   useFrame((state, delta) => {
     const { clock } = state;
     if (points.current) {
-      points.current.material.uniforms.uTime.value = clock.getElapsedTime() * 0.1;
+      (points.current.material as THREE.ShaderMaterial).uniforms.uTime.value = clock.getElapsedTime() * 0.1;
     }
     angleRef.current += delta * 0.08; // Adjust the multiplier to change rotation speed
 

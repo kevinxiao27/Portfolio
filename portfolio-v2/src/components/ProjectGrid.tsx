@@ -48,7 +48,7 @@ export const ProjectGrid: React.FC<ProjectGridProps> = ({ projects }) => {
   }, []);
 
   return (
-    <div className='container mx-auto px-4 py-[10rem] z-10'>
+    <div className='container mx-auto px-4 py-[10rem] max-w-full z-10'>
       <motion.div
         className='grid grid-cols-1 md:grid-cols-3 gap-12'
         initial='initial'
@@ -62,21 +62,20 @@ export const ProjectGrid: React.FC<ProjectGridProps> = ({ projects }) => {
         }}
       >
         {projects.map((project, index) => (
-          <motion.div key={index} className='flex flex-col space-y-4 bg-[rgba(255,255,255,0.2)] p-3 rounded-lg' variants={fadeInUp}>
+          <motion.div key={index} className='flex flex-col space-y-4 bg-[rgba(0,0,0,0.4)] p-5 rounded-lg' variants={fadeInUp}>
             <div className='relative aspect-[3/2] overflow-hidden rounded-lg'>
               <Link href={project.link}>
                 <Image
                   src={project.src}
                   alt={project.name}
-                  layout='fill'
-                  objectFit='contain'
-                  className='transition-transform duration-300 hover:scale-105'
+                  fill
+                  className='transition-transform duration-300 hover:scale-105 object-contain'
                 />
               </Link>
             </div>
             <div className='flex justify-between items-center'>
               <h3 className='text-xl font-semibold'>{project.name}</h3>
-              <span className='text-sm text-white'>{project.date}</span>
+              <span className='text-sm text-white text-nowrap'>{project.date}</span>
             </div>
             <p className='text-sm text-white line-clamp-4'>{project.desc}</p>
             <div className='flex space-x-4'>

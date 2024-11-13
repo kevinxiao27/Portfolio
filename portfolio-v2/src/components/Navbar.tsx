@@ -40,12 +40,7 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
   }, [lastScrollY, controls]);
 
   return (
-    <motion.nav
-      className='p-4 pt-8 fixed w-full backdrop-blur-sm z-50'
-      initial={{ y: 0 }}
-      animate={controls}
-      transition={{ duration: 0.3 }}
-    >
+    <motion.nav className='p-4 pt-8 fixed w-full z-50' initial={{ y: 0 }} animate={controls} transition={{ duration: 0.3 }}>
       <div className='max-w-6xl mx-auto'>
         <div className='flex justify-between items-center'>
           <div className='hidden md:flex justify-between items-center flex-grow ml-10'>
@@ -67,7 +62,7 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
           </div>
           <div className='md:hidden'>
             <button
-              className='text-white focus:outline-none'
+              className='text-white focus:outline-none ml-4'
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label='Toggle mobile menu'
             >
@@ -80,7 +75,7 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
       </div>
       {/* Mobile menu */}
       <motion.div
-        className='md:hidden'
+        className='md:hidden w-[90%] mr-3'
         initial={{ opacity: 0, height: 0 }}
         animate={{ opacity: isMobileMenuOpen ? 1 : 0, height: isMobileMenuOpen ? "auto" : 0 }}
         transition={{ duration: 0.3 }}
@@ -90,7 +85,7 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
             <Link key={link.href} href={link.href}>
               <span
                 className={`block px-3 py-2 rounded-md text-base font-medium text-white cursor-pointer ${
-                  activeLink === index ? "bg-white text-black" : "hover:bg-white hover:text-black"
+                  activeLink === index ? "bg-white !text-black" : "hover:bg-white hover:text-black"
                 }`}
                 onClick={() => {
                   setActiveLink(index);

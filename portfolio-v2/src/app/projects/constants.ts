@@ -37,7 +37,7 @@ export const projects: Project[] = [
     link: "https://github.com/kevinxiao27/swiftgift"
   },
   {
-    name: "Cache You Later - nwHacks 2024",
+    name: "CacheYouLater - nwHacks 2024",
     date: "January 2024",
     src: Happy2,
     desc: `nwHacks submission for community and connection based 

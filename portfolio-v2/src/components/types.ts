@@ -8,3 +8,13 @@ export type Project = {
   link: string;
   prod?: string;
 };
+
+export type Experience = {
+  name: string;
+  organization: string;
+  src?: StaticImageData;
+  link: string;
+  date: string;
+  endDate?: string;
+  description: string;
+};

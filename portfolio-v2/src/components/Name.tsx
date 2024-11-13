@@ -54,17 +54,42 @@ export const Name: React.FC = ({ name = "Kevin Xiao" }: { name?: string }) => {
             CS + Business @ UBC <br></br> SWE @ UBC BizTech
           </div>
           <div className='flex flex-row space-x-3 items-center'>
-            <Link href='https://github.com/kevinxiao27' className='p-2  border-2 border-white rounded-lg cursor-pointer'>
+            <Link
+              href='https://github.com/kevinxiao27'
+              className='p-2  border-2 border-white rounded-lg cursor-pointer flex flex-row items-center'
+            >
               <Github size={30} />
+              <div className='px-2'>Github</div>
             </Link>
-            <Link href='https://linkedin.com/in/kevin-xiao-xyz/' className='p-2  border-2 border-white rounded-lg cursor-pointer'>
+            <Link
+              href='https://linkedin.com/in/kevin-xiao-xyz/'
+              className='p-2  border-2 border-white rounded-lg cursor-pointer flex flex-row items-center'
+            >
               <Linkedin size={30} />
+              <div className='px-2'>Linkedin</div>
             </Link>
           </div>
         </div>
       </div>
-      <div className='text-2xl lg:hidden w-full text-center -mt-[10rem] border-l-2 border-white pl-3'>
-        CS + Business @ UBC <br></br> SWE @ UBC BizTech
+      <div className='flex flex-row justify-center -mt-10'>
+        <div className='text-2xl lg:hidden justify-center space-y-3 -mt-[10rem] border-l-2 border-white pl-3'>
+          <div className='text-2xl'>
+            CS + Business @ UBC <br></br> SWE @ UBC BizTech
+          </div>
+          <div className='flex flex-col space-y-3 justify-start'>
+            <Link href='https://github.com/kevinxiao27' className='p-2  border-2 border-white rounded-lg cursor-pointer flex flex-row'>
+              <Github size={30} />
+              <div className='px-2'>Github</div>
+            </Link>
+            <Link
+              href='https://linkedin.com/in/kevin-xiao-xyz/'
+              className='p-2  border-2 border-white rounded-lg cursor-pointer flex flex-row'
+            >
+              <Linkedin size={30} />
+              <div className='px-2'>Linkedin</div>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );
