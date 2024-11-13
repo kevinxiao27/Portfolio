@@ -27,7 +27,7 @@ export const Name: React.FC = ({ name = "Kevin Xiao" }: { name?: string }) => {
   const repeatedText = circleText.repeat(2);
 
   return (
-    <div>
+    <div className='-mt-40 lg:mt-0'>
       <div className='flex items-center gap-x-40 justify-center w-full h-screen'>
         <div className='relative'>
           <motion.div

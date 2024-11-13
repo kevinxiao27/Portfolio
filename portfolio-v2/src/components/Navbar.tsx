@@ -21,12 +21,14 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      if (currentScrollY > lastScrollY && currentScrollY > 0) {
-        // Scrolling down
-        controls.start({ y: "-100%" });
-      } else {
+      if (currentScrollY < lastScrollY) {
         // Scrolling up
-        controls.start({ y: 0 });
+        controls.start({ y: 0, transition: { duration: 0.3 } });
+      } else if (currentScrollY < 20) {
+        controls.start({ y: 0, transition: { duration: 0.3 } });
+      } else {
+        // Scrolling down
+        controls.start({ y: "-100%", transition: { duration: 0.3 } });
       }
 
       setLastScrollY(currentScrollY);
@@ -40,7 +42,7 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
   }, [lastScrollY, controls]);
 
   return (
-    <motion.nav className='p-4 pt-8 fixed w-full z-50' initial={{ y: 0 }} animate={controls} transition={{ duration: 0.3 }}>
+    <motion.nav className='p-4 pt-8 fixed w-full z-auto top-0' initial={{ y: 0 }} animate={controls} transition={{ duration: 0.3 }}>
       <div className='max-w-6xl mx-auto'>
         <div className='flex justify-between items-center'>
           <div className='hidden md:flex justify-between items-center flex-grow ml-10'>
@@ -78,7 +80,7 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
         className='md:hidden w-[90%] mr-3'
         initial={{ opacity: 0, height: 0 }}
         animate={{ opacity: isMobileMenuOpen ? 1 : 0, height: isMobileMenuOpen ? "auto" : 0 }}
-        transition={{ duration: 0.1 }}
+        transition={{ duration: 0.5 }}
       >
         <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
           {links.map((link, index) => (
