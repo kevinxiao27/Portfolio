@@ -42,7 +42,7 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
   }, [lastScrollY, controls]);
 
   return (
-    <motion.nav className='p-4 pt-8 fixed w-full z-auto top-0' initial={{ y: 0 }} animate={controls} transition={{ duration: 0.3 }}>
+    <motion.nav className='p-4 pt-8 fixed w-full z-50 top-0' initial={{ y: 0 }} animate={controls} transition={{ duration: 0.3 }}>
       <div className='max-w-6xl mx-auto'>
         <div className='flex justify-between items-center'>
           <div className='hidden md:flex justify-between items-center flex-grow ml-10'>
