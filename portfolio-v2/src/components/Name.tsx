@@ -23,12 +23,11 @@ function useRotation() {
 
 export const Name: React.FC = ({ name = "Kevin Xiao" }: { name?: string }) => {
   const rotationRef = useRotation();
-  const circleText = "SWE  •  STUDENT  •  TA  •  CS  •  WRITER  •  ";
-  const repeatedText = circleText.repeat(2);
+  const circleText = "  SWE  •  STUDENT  •  TA  •  SOFTWARE LEAD ";
 
   return (
     <div className='-mt-40 lg:mt-0'>
-      <div className='flex items-center gap-x-40 justify-center w-full h-screen'>
+      <div className='flex items-center gap-x-40 pt-[10rem] lg:pt-10 justify-center w-full h-screen'>
         <div className='relative'>
           <motion.div
             className='text-5xl font-bold text-white'
@@ -44,7 +43,7 @@ export const Name: React.FC = ({ name = "Kevin Xiao" }: { name?: string }) => {
                 <path id='circle' d='M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0' />
               </defs>
               <text fontSize='7.5'>
-                <textPath xlinkHref='#circle'>{repeatedText}</textPath>
+                <textPath xlinkHref='#circle'>{circleText}</textPath>
               </text>
             </svg>
           </div>

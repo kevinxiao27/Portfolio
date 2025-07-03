@@ -4,13 +4,21 @@ import NAOS from "@/assets/Naos.png";
 
 export const experience: Experience[] = [
   {
-    name: "Software Engineer",
+    name: "Lead Software Engineer",
     organization: "UBC BizTech",
     link: "https://www.ubcbiztech.com/",
     src: BizTech,
     date: "May 2024 \n- Present",
     description:
-      "Spearheaded the development of a WebSocket microservice for a real-time voting platform, supporting over 200 concurrent users with minimal latency through robust stateful socket protocols and edge deployment. Reduced DynamoDB read costs by 40% by transitioning from relational scans to single-table queries and using Global-Secondary Indexes for faster reads and lower RCUs. Decreased socket service onboarding time by 60% by creating comprehensive technical documentation detailing database access patterns, socket protocols, and key architectural decisions."
+      "Enabled 4,070+ connections for 270 attendees at flagship conference with NFC cards and an internal networking platform using serverless architecture and DynamoDB. Engaged 200+ concurrent audience and judges with real-time reactions and scoring (< 100 ms response time) using a WebSocket microservice and AWS API Gateway. Automated feedback distribution for 150+ hackathon attendees and judges using z-score normalization and a NFC workflow."
+  },
+  {
+    name: "Software Engineer Intern -- Backend Decision Team",
+    organization: "DataVisor",
+    link: "https://www.datavisor.com/",
+    date: "Jan 2025 - Apr 2025",
+    description:
+      "Led a business intelligence enhancement project used by 5+ clients with 1M+ users, securing dashboard embeddings by parsing tree-structured Metabase data and custom client configurations. Resolved recurring P1 issue requiring 100+ hours across 10+ infra team members by synchronizing ClickHouse table configs with post-deployment jobs across 12 environments. Eliminated 100% of manual time spent by 300+ fraud investigators templating fraud case notes by building a templating service with Liquibase-based rollback support."
   },
   {
     name: "Undergraduate Teaching Assistant - Software Construction | OOP",

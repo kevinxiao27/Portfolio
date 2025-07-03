@@ -48,12 +48,12 @@ export const Experiences: React.FC<ExperienceProps> = ({ experience }) => {
               <div className='absolute left-0 ml-[2px] md:left-[120px] top-1 w-4 h-4 bg-black border-2 border-blue-300 z-10 rounded-full transform -translate-x-1/2' />
               <p className='hidden md:block absolute left-0 top-0 w-[140px]  text-sm text-gray-300 pr-16 text-left'>{exp.date}</p>
 
-              <h3 className='text-xl font-semibold mb-1 text-white -mt-1'>{exp.name}</h3>
+              <h3 className='text-xl font-semibold mb-1 text-white -mt-1'>{exp.organization}</h3>
               <Link
                 href={exp.link}
                 className='text-gray-400 hover:text-white transition-colors duration-200 flex flex-row items-center space-x-2'
               >
-                <div>{exp.organization}</div>
+                <div>{exp.name}</div>
                 <ExternalLink size={20} />
               </Link>
               {/* Date for mobile */}

@@ -2,9 +2,18 @@ import SwiftGift from "@/assets/SwiftGift.jpg";
 import UXLive from "@/assets/UX-Live.png";
 import Happy2 from "@/assets/Happy2.png";
 import GeoPlots from "@/assets/GeoPlots.png";
+import Nerve from "@/assets/Nerve.png";
 import { Project } from "@/components/types";
 
 export const projects: Project[] = [
+  {
+    name: "Nerve – Real‑Time Emergency Dispatch Dashboard",
+    date: "March 2025",
+    src: Nerve,
+    prod: "https://devpost.com/software/nerve-1vlr0m",
+    desc: `ProductX Hackathon (2nd Place & CDL/Venture Founder Prize). Won $500 prize out of 60+ teams, plus CDL & Venture Founder awards. Built a real‑time dashboard to stream body‑cam video/audio from field units with AI‑powered event summarization and sentiment detection using TensorFlow. Led architecture and data ingestion using Socket.io, Express.js, Supabase, and AssemblyAI—batching videos for ingestion and streaming updates over WebSockets.`,
+    link: "https://devpost.com/software/nerve-1vlr0m"
+  },
   {
     name: "UXOpen Live Voting Platform",
     date: "May 2024",
