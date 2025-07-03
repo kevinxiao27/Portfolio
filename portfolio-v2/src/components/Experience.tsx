@@ -19,7 +19,7 @@ export const Experiences: React.FC<ExperienceProps> = ({ experience }) => {
   });
   const scaleY = useSpring(scrollYProgress, {
     stiffness: 100,
-    damping: 30,
+    damping: 10,
     restDelta: 0.001
   });
 
@@ -32,10 +32,7 @@ export const Experiences: React.FC<ExperienceProps> = ({ experience }) => {
           <div className='absolute left-0 md:left-[120px] top-0 bottom-0 w-1 bg-white bg-opacity-20' />
 
           {/* Animated fill line */}
-          <motion.div
-            className='absolute left-0 md:left-[120px] top-0 w-1 bg-blue-300 origin-top z-10'
-            style={{ scaleY, height: "100%" }}
-          />
+          <motion.div className='absolute left-0 md:left-[120px] top-0 w-1 bg-blue-300 origin-top z-10' style={{ scaleY, height: "80%" }} />
 
           {experience.map((exp, index) => (
             <motion.div

@@ -27,7 +27,7 @@ export const Name: React.FC = ({ name = "Kevin Xiao" }: { name?: string }) => {
 
   return (
     <div className='-mt-40 lg:mt-0'>
-      <div className='flex items-center gap-x-40 pt-[10rem] lg:pt-10 justify-center w-full h-screen'>
+      <div className='flex lg:flex-row flex-col items-center gap-x-40 pt-[10rem] lg:pt-10 justify-center w-full h-screen'>
         <div className='relative'>
           <motion.div
             className='text-5xl font-bold text-white'
@@ -70,7 +70,7 @@ export const Name: React.FC = ({ name = "Kevin Xiao" }: { name?: string }) => {
           </div>
         </div>
       </div>
-      <div className='flex flex-row justify-center -mt-10'>
+      <div className='flex flex-row justify-center lg:-mt-10 mt-20'>
         <div className='text-2xl lg:hidden justify-center space-y-3 -mt-[10rem] border-l-2 border-white pl-3'>
           <div className='text-2xl'>
             CS + Business @ UBC <br></br> SWE @ UBC BizTech

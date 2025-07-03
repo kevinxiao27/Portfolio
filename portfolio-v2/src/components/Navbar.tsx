@@ -24,7 +24,7 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
       if (currentScrollY <= lastScrollY) {
         // Scrolling up
         controls.start({ y: 0, transition: { duration: 0.5 } });
-      } else {
+      } else if (currentScrollY > lastScrollY) {
         // Scrolling down
         controls.start({ y: "-100%", transition: { duration: 0.5 } });
       }
